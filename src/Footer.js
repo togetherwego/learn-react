@@ -4,7 +4,7 @@ function Footer() {
   const today = new Date()
 
   return (
-    <footer>
+    <footer style={{ alignItems: 'flex-end' }} >
       <p>Copyright &copy; {today.getFullYear()}</p>
     </footer>
   )

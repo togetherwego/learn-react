@@ -2,13 +2,28 @@ import React from 'react'
 
 function Content() {
   const handleNameChange = () => {
-    const name = ['Firyal', 'Mikasa', 'Eren']
+    const names = ['Firyal', 'Mikasa', 'Eren']
     const int = Math.floor(Math.random() * 3)
-    return name[int]
+    return names[int]
   }
+
+  const handleClick = () => {
+    console.log('You clicked it')
+  }  
+  
+  const handleClickTwo = (name) => {
+    console.log(`${name} was clicked`)
+  }
+  const handleClickThree = (e) => {
+    console.log(e.target)
+  }
+
   return (
     <div>
-      <p>Hello {handleNameChange()}!</p>
+      <p onDoubleClick={handleClick}>Hello {handleNameChange()}!</p>
+      <button onClick={handleClick}>Click it</button>
+      <button onClick={() => handleClickTwo(`firyal`)}>Click it</button>
+      <button onClick={(e) => handleClickThree(e)}>Click it</button>
     </div>
   )
 }
