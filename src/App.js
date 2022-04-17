@@ -1,21 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Header from './Header'
+import Content from './Content'
+import Footer from './Footer'
 
 function App() {
-  const handleNameCHange = () => {
-    const name = ['Firyal', 'Mikasa', 'Eren']
-    const int = Math.floor(Math.random() * 3)
-    return name[int]
-  }
-
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello {handleNameCHange()}!</p>
-      </header>
+      <Header />
+      <Content />
+      <Footer />
     </div>
-  );
-} 
+  )
+}
 
-export default App;
+export default App
