@@ -21,12 +21,26 @@ function Content() {
     console.log(count)
   }
 
+  // const handleClick = () => {
+  //   console.log('You clicked it')
+  // }
+
+  // const handleClickTwo = (name) => {
+  //   console.log(`${name} was clicked`)
+  // }
+  // const handleClickThree = (e) => {
+  //   console.log(e.target.value)
+  // }
+
   return (
     <div>
       <p onDoubleClick={handleClick}>Hello {name}!</p>
       <button onClick={handleNameChange}>Change Name</button>
       <button onClick={handleClick}>Click it</button>
       <button onClick={handleClickTwo}>Click it</button>
+      {/* <button onClick={handleClick}>Click it</button>
+      <button onClick={() => handleClickTwo(`firyal`)}>Click it</button>
+      <button onClick={(e) => handleClickThree(e)}>Click it</button> */}
     </div>
   )
 }
