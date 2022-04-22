@@ -1,0 +1,20 @@
+
+{
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "sabun"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "item": "sampoo"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "odol"
+    }
+  ]
+}
