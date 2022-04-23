@@ -1,20 +1,19 @@
-
 {
   "items": [
-    {
-      "id": 1,
-      "checked": false,
-      "item": "sabun"
-    },
-    {
-      "id": 2,
-      "checked": false,
-      "item": "sampoo"
-    },
     {
       "id": 3,
       "checked": false,
       "item": "odol"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "item": "rinso"
+    },
+    {
+      "id": 5,
+      "checked": true,
+      "item": "molto"
     }
   ]
 }
